@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ChickExpress</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: #0e0e0e;
+    color: #f5f5f5;
+    font-family: 'Inter', sans-serif;
+  }
+
+  header {
+    background: #0e0e0e;
+    padding: 20px 24px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border-bottom: 2px solid #e87c2b;
+  }
+
+  header h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2rem;
+    color: #e87c2b;
+    letter-spacing: 2px;
+  }
+
+  header p {
+    font-size: 0.75rem;
+    color: #aaa;
+    letter-spacing: 1px;
+  }
+
+  .hero {
+    background: linear-gradient(135deg, #1a1a1a, #2a1500);
+    padding: 48px 24px;
+    text-align: center;
+  }
+
+  .hero h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 3.5rem;
+    color: #fff;
+    line-height: 1;
+  }
+
+  .hero h2 span {
+    color: #e87c2b;
+  }
+
+  .hero p {
+    margin-top: 12px;
+    color: #bbb;
+    font-size: 0.95rem;
+  }
+
+  section {
+    padding: 40px 24px;
+    max-width: 640px;
+    margin: 0 auto;
+  }
+
+  h3 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.8rem;
+    color: #e87c2b;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+  }
+
+  .menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 0;
+    border-bottom: 1px solid #222;
+  }
+
+  .menu-item:last-child { border-bottom: none; }
+
+  .item-name {
+    font-size: 1rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .star { color: #e87c2b; font-size: 0.85rem; }
+
+  .price {
+    font-size: 1rem;
+    color: #e87c2b;
+    font-weight: 600;
+  }
+
+  .divider {
+    height: 1px;
+    background: #222;
+    margin: 0 24px;
+  }
+
+  .customize-box {
+    background: #1a1a1a;
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 20px;
+  }
+
+  .customize-box p {
+    color: #ccc;
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+  }
+
+  .tag {
+    display: inline-block;
+    background: #2a1500;
+    color: #e87c2b;
+    border: 1px solid #e87c2b44;
+    border-radius: 4px;
+    padding: 4px 10px;
+    font-size: 0.8rem;
+    margin: 4px 4px 4px 0;
+  }
+
+  .sides-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+  }
+
+  .sides-grid .menu-item {
+    padding: 10px 0;
+  }
+
+  footer {
+    text-align: center;
+    padding: 32px 24px;
+    background: #0e0e0e;
+    border-top: 1px solid #222;
+    color: #666;
+    font-size: 0.8rem;
+  }
+
+  footer a {
+    color: #e87c2b;
+    text-decoration: none;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div>
+    <h1>CHICKEXPRESS</h1>
+    <p>TASTE THAT FITS YOUR GUILT-FREE LIFESTYLE</p>
+  </div>
+</header>
+
+<div class="hero">
+  <h2>SIGNATURE<br><span>SELECTION</span></h2>
+  <p>Crispy. Flavorful. Made your way.</p>
+</div>
+
+<section>
+  <h3>Flavors</h3>
+  <div class="menu-item">
+    <span class="item-name">Original</span>
+    <span class="price">₱129</span>
+  </div>
+  <div class="menu-item">
+    <span class="item-name">Garlic Parmesan <span class="star">★</span></span>
+    <span class="price">₱129</span>
+  </div>
+  <div class="menu-item">
+    <span class="item-name">Creamy Cheese</span>
+    <span class="price">₱129</span>
+  </div>
+  <div class="menu-item">
+    <span class="item-name">Lemon Pepper</span>
+    <span class="price">₱129</span>
+  </div>
+  <div class="menu-item">
+    <span class="item-name">Creamy Salted Egg</span>
+    <span class="price">₱139</span>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section>
+  <h3>Add a Side</h3>
+  <div class="menu-item">
+    <span class="item-name">Extra Veggie / Extra Chili</span>
+    <span class="price">₱15</span>
+  </div>
+  <div class="menu-item">
+    <span class="item-name">Extra Ranch</span>
+    <span class="price">₱15</span>
+  </div>
+  <div class="menu-item">
+    <span class="item-name">Rice</span>
+    <span class="price">₱20</span>
+  </div>
+  <div class="menu-item">
+    <span class="item-name">Red Rice</span>
+    <span class="price">₱35</span>
+  </div>
+  <div class="menu-item">
+    <span class="item-name">Overload <small style="color:#888;font-size:0.75rem">(6pcs, your flavor, no rice)</small></span>
+    <span class="price">₱199</span>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section>
+  <h3>Customize It Your Way</h3>
+  <div class="customize-box">
+    <p>Make it yours:</p>
+    <span class="tag">Mix ★</span>
+    <span class="tag">No Veggie</span>
+    <span class="tag">Extra Veggie</span>
+    <span class="tag">No Ranch</span>
+    <span class="tag">No Chili</span>
+    <span class="tag">No Rice ★</span>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 ChickExpress &nbsp;·&nbsp; <a href="https://www.facebook.com/profile.php?id=61576226512460" target="_blank">Facebook Page</a></p>
+</footer>
+
+</body>
+</html>
